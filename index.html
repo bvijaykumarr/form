@@ -8,16 +8,36 @@
     <style>
       &lowast; 
       {
-        
+
         }
-        </style>
+        div  {
+  background-color: lightgre;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 10px;
+}
+.center {
+  float: right;
+  width: 450px;
+  border: 3px solid #f5f8f2;
+  padding: 15px;
+}
+.img1 {
+  float: right;
+}
+      </style>
 </head>
 <!--<span>&#8727;</span>-->
-<body>
-    <h1>Admission Form</h1>
+<body><br>
+    <img class="right" src="/assests/log.ico" alt="Logo" width="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="center"><b >Indian Springs High School<br> In the Ditrict of NTR,Vijayawada Urban,Beside Main Road.<br>
+      P.O:- Gollapudi,Vijayawada Urban,NTR DT,Andhra Pradesh, Pin:521225 <br>Email:- indianspringshs@gmail.com, *Contact : 9849298492
+          </b></div>
+    <h1 style="text-align: center; color:blue;" >Admission Form</h1>
     <form action="action.java" method="get">
-        <fieldset>
-            <legend>personal</legend>
+        <div style="width: 70%; text-align:justify;>
+            <legend style="text-align: center;"><h2>Application Form For Admission</h2></legend>
             <p style="color:Tomato;"> Please fill all the mandatory Fields</p>
             <label for="nam" >Student Name:<span>&lowast;</span></label>
             <input type="text" id="nam" name="" required><br><br>
@@ -49,7 +69,7 @@
             <label for="mai">Student E-mail ID:&lowast;</label>
             <input type="email" id="mai" name="mai" required><br><br>
             <label for="phn">Parent Phone No:&lowast;</label>
-            <input type="number" id="phn" name="pho"  maxlength="10" pattern="[0-9]" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+            <input type="tel" id="phn" name="pho"  maxlength="10" pattern="[0-9]" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
             <label for="mai">Parent E-mail ID:&lowast;</label>
             <input type="email" id="mai" name="mai" required><br><br>
             <label for="cour" >Choose Course:<span>&lowast;</span></label>
