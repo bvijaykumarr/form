@@ -32,6 +32,10 @@
         <div style="width: 70%; text-align:justify;">
             <legend style="text-align: center;"><h2>Application Form For Admission</h2></legend>
             <p style="color:Tomato;"> Please fill all the mandatory Fields</p>
+            <label for="adno">Admission No:</label>
+            <input type="number" id="adno" name="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="addt">Admission date:</label>
+            <input type="date" id="addt" name="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="adcs">Admission Class:</label>
+            <input type="number" id="adcs" name=""> <br><br>
             <label for="nam" >Student Name:<span>&lowast;</span></label>
             <input type="text" id="nam" name="" required><br><br>
             <label for="nam">Father's Name:&lowast;</label>
@@ -46,7 +50,11 @@
             <input type="radio" id="mast" name="mas" required >Single&nbsp;
             <input type="radio" id="mast" name="mas" required >Married<br><br>
             <label for="reg" >Religion:</label>
-            <input type="text" id="reg" name="relg" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><br><br>
+            <select id="reg" name="reg">
+              <option value="select">select</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Christian">Christian</option>
+              <option value="Muslim">Muslim</option></select><br><br>
                 <label for="edu">Choose a Higest Degree:</label>
                 <select id="edu" name="ed">
                   <option value="select">select</option>
@@ -55,8 +63,10 @@
                   <option value="Intermediate">Intermediate</option>
                   <option value="SSC">SSC</option>
                 </select></span><br><br>
+            <label for="adrno">Aadhaar Number:<span>&lowast;</span></label>
+            <input type="number" id="adrno" name="" required><br><br>
             <label for="adr" >Permanent Address:<span>&lowast;</span></label>
-            <input type="text" id="adr" name="Adre" required><br><br>
+            <input type="text" id="adr" name="Adre" size="70" required><br><br>
             <label for="phn">Student Phone No:&lowast;</label>
             <input type="tel" id="phn" name="pho" maxlength="10" pattern="[0-9]" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
             <label for="mai">Student E-mail ID:&lowast;</label>
@@ -78,6 +88,10 @@
                   <option value="Business">Business</option>
                   <option value="Others">Others</option>
                 </select></span><br><br>
+                <label for="iden">Personal Marks for Identification:&lowast;</label>
+            1.<input type="text" id="iden" name="" size="50" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.<input type="text" id="iden" name="" size="50" required><br><br>
+            <label for="prescl">Previous School Studied:&lowast;</label>
+            <input type="text" id="prescl" name="" size="30" required><br><br>
 
 
             
@@ -90,5 +104,4 @@
         </fieldset>
     </form>
     </body>
-    <main>   <img src="/assests/log.jpg" alt="Logo"></main>
 </html>
